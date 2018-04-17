@@ -147,7 +147,10 @@ a {
   bottom: 0;
   display: inline-block;
   padding: 15px 55px;
+  border: 0;
   border-radius: 100px;
+  outline: none;
+  cursor: pointer;
   box-shadow: 0 3px 6px rgba(231, 97, 107, 0.6);
   user-select: none;
   -moz-user-select: none;

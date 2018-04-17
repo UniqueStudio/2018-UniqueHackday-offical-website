@@ -21,11 +21,15 @@ window.addEventListener("load", () => {
   $("#fullpage").fullpage();
 });
 
-$(".pro-title").click(function() {
+$("btn").on("click", function() {
+  window.open("https://console.hack.hustunique.com/", "_self");
+});
+
+$(".pro-title").on("click", function(e) {
   $(this.parentNode)
     .find(".pro-answer")
     .slideToggle(300);
-  if ($(this).attr("data-attr") == 0) {
+  if ($(this).attr("data-attr") === "0") {
     $(this)
       .children("p")
       .addClass("close-tag");
