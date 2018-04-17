@@ -11,13 +11,10 @@ import "./utils/jquery.fullpage.min.js";
 const $ = require("jquery");
 
 // $(document).ready(() => {
-
+//   $("#fullpage").fullpage();
 // });
 
 window.addEventListener("load", () => {
-  document.getElementById("fullpage").innerHTML += document.getElementById(
-    "template"
-  ).innerHTML;
   $("#fullpage").fullpage();
 });
 
