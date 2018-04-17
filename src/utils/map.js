@@ -4,7 +4,7 @@ function initMap() {
   setMapEvent(); //设置地图事件
   addMapControl(); //向地图添加控件
   addPolyline(); //向地图中添加线
-  addRemark(); //向地图中添加文字标注
+  // addRemark(); //向地图中添加文字标注
 }
 
 //创建地图函数：
