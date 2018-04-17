@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
   $("#fullpage").fullpage();
 });
 
-$("btn").on("click", function() {
+$("#btn").on("click", function() {
   window.open("https://console.hack.hustunique.com/", "_self");
 });
 
