@@ -1,15 +1,61 @@
 #problem
   background-color: #3f4db7
-  min-height: 100%
+  min-height: 100% !important
   display: flex
   justify-content: center
   align-items: center
+#problem p
+  user-select: none
+.pro-page-ctn
+  width: 80%
+  $p-margin-r: 2rem
+  $p-before-size: 1rem
+  p
+    color: white
+  .pro-ctn
+    display: block
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    padding: 1rem 0
+    .pro-title
+      p
+        line-height: 2.5rem
+        font-size: 1.4rem
+        letter-spacing: .3rem
+        position: relative
+      p:before
+        content: ""
+        display: inline-block
+        width: $p-before-size
+        height: $p-before-size
+        background-color: #f1606b
+        border-radius: 50%
+        margin-right: $p-margin-r
 
-.pro-ctn
-  background-color: red
-  display: block
+    .pro-answer
+      display: none
+      margin-right: 2.5rem
+      p
+        text-indent: $p-margin-r + $p-before-size
+        line-height: 2rem
+        font-size: 1rem
+        letter-spacing: .3rem
 
-.pro-answer
-  display: block
-  visibility: hidden
-  transition: all 1s ease
+.open-tag:after
+  content: ''
+  background-image: url("../static/open.png")
+  background-size: 2.5rem
+  width: 2.5rem
+  height: 2.5rem
+  position: absolute
+  right: 0
+  top: calc(50% - 1rem)
+.close-tag:after
+  content: ''
+  background-image: url("../static/close.png")
+  background-size: 2rem 2rem
+  width: 2rem
+  height: 2rem
+  position: absolute
+  color: red
+  right: 0
+  top: calc(50% - 1rem)

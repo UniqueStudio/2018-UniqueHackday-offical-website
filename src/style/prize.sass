@@ -1,10 +1,10 @@
 #prize-ctn
-  padding-top: 10rem
   box-sizing: border-box
 
 
 .prize-title
   width: 100%
+  margin-top: -10rem
 #prize-ctn
   p
     text-align: center
@@ -24,32 +24,50 @@
 
 .prize-more
   width: 100%
-  //display: flex
-  //justify-content: center
-  .prize-logo-ctn
+  .prize-info-ctn
     height: 90%
     width: 90%
     display: flex
-    margin-top: 5rem
-    .prize-logo
-      //height: 100%
-      //padding: 2rem
-      flex: 1 1 (270rem / 15)
+    margin: 5rem auto 0 auto
+    .prize-info-item
+      position: relative
+      flex: 1 1 (250rem / 15)
       display: flex
       justify-content: center
       align-items: flex-end
       img[alt="champion"]
-        width: 270 / 15 * 0.9rem
-      img[alt="second"], img[alt="third"], img[alt="cata"], img[alt="company"]
-        width: 270 / 15 * 0.5rem
-  .prize-info-ctn
-    width: 90%
-    height: 10%
-    display: flex
-    .prize-info
-      flex: 1 1 (270rem / 15)
-      display: flex
-      flex-direction: column
-      justify-content: flex-end
-      align-items: center
+        width: 250 / 15 * 0.85rem
+      img[alt="second"], img[alt="third"]
+        width: 250 / 15 * 0.5rem
+      img[alt="cata"], img[alt="company"]
+        width: 250 / 15 * 0.45rem
+      .prize-info-text
+        width: 100%
+        $h: 50%
+        height: $h
+        position: absolute
+        bottom: -$h
+        left: 0
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        .prize-name, .prize-detail
+          color: #1d2d61
+        .prize-name
+          font-size: (25rem) / 15
+          letter-spacing: .5rem
+          text-indent: .5rem
+          font-weight: 600
+        .prize-detail
+          font-size: (15rem) / 15
+          letter-spacing: .3rem
+          text-indent: .3rem
+        .prize-award
+          color: #323232
+          margin-top: .6rem
+          letter-spacing: .2rem
+          text-indent: .2rem
+          font-size: (24rem) / 15
+          font-weight: 600
 
