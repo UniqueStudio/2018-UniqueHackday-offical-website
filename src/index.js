@@ -19,27 +19,27 @@ window.addEventListener("load", () => {
     "template"
   ).innerHTML;
   $("#fullpage").fullpage();
+
+  $(".pro-title").on("click", function(e) {
+    $(this.parentNode)
+      .find(".pro-answer")
+      .slideToggle(300);
+    if ($(this).attr("data-attr") === "0") {
+      $(this)
+        .children("p")
+        .addClass("close-tag");
+      $(this).attr("data-attr", "1");
+    } else {
+      $(this)
+        .children("p")
+        .removeClass("close-tag");
+      $(this).attr("data-attr", "0");
+    }
+  });
 });
 
 $("#btn").on("click", function() {
   window.open("https://console.hack.hustunique.com/", "_self");
-});
-
-$(".pro-title").on("click", function(e) {
-  $(this.parentNode)
-    .find(".pro-answer")
-    .slideToggle(300);
-  if ($(this).attr("data-attr") === "0") {
-    $(this)
-      .children("p")
-      .addClass("close-tag");
-    $(this).attr("data-attr", "1");
-  } else {
-    $(this)
-      .children("p")
-      .removeClass("close-tag");
-    $(this).attr("data-attr", "0");
-  }
 });
 
 // 彩蛋～
