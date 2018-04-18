@@ -36,10 +36,9 @@ window.addEventListener("load", () => {
       $(this).attr("data-attr", "0");
     }
   });
-});
-
-$("#btn").on("click", function() {
-  window.open("https://console.hack.hustunique.com/", "_self");
+  $("#btn").on("click", function() {
+    window.open("https://console.hack.hustunique.com/", "_self");
+  });
 });
 
 // 彩蛋～
