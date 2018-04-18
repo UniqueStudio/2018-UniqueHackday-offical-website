@@ -1,12 +1,13 @@
-import "./style/index.css";
+import "./style/index.sass";
 import "./style/whatup.css";
-import "./style/time.css";
+import "./style/time.sass";
 import "./style/thanks.sass";
 import "./style/problem.sass";
 import "./style/map.sass";
 import "./style/prize.sass";
 import "./utils/jquery.fullpage.min.css";
 import "./utils/jquery.fullpage.min.js";
+import "./style/phone.sass";
 
 const $ = require("jquery");
 
