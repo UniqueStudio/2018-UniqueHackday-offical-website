@@ -20,6 +20,10 @@
     font-size: 11px;
   }
 }
+
+.BMap_scaleCtrl {
+  display: none
+}
 * {
   padding: 0;
   margin: 0;
