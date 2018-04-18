@@ -6,39 +6,40 @@
   align-items: center
 #problem p
   user-select: none
-.pro-page-ctn
-  width: 80%
-  $p-margin-r: 2rem
-  $p-before-size: 1rem
-  p
-    color: white
-  .pro-ctn
-    display: block
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
-    padding: 1rem 0
-    .pro-title
-      p
-        line-height: 2.5rem
-        font-size: 1.4rem
-        letter-spacing: .3rem
-        position: relative
-      p:before
-        content: ""
-        display: inline-block
-        width: $p-before-size
-        height: $p-before-size
-        background-color: #f1606b
-        border-radius: 50%
-        margin-right: $p-margin-r
 
-    .pro-answer
-      display: none
-      margin-right: 2.5rem
-      p
-        text-indent: $p-margin-r + $p-before-size
-        line-height: 2rem
-        font-size: 1rem
-        letter-spacing: .3rem
+@media (min-width: 480px)
+  .pro-page-ctn
+    width: 80%
+    $p-margin-r: 2rem
+    $p-before-size: 1rem
+    p
+      color: white
+    .pro-ctn
+      display: block
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+      padding: 1rem 0
+      .pro-title
+        p
+          line-height: 2.5rem
+          font-size: 1.4rem
+          letter-spacing: .3rem
+          position: relative
+        p:before
+          content: ""
+          display: inline-block
+          width: $p-before-size
+          height: $p-before-size
+          background-color: #f1606b
+          border-radius: 50%
+          margin-right: $p-margin-r
+      .pro-answer
+        display: none
+        margin-right: 2.5rem
+        p
+          text-indent: $p-margin-r + $p-before-size
+          line-height: 2rem
+          font-size: 1rem
+          letter-spacing: .3rem
 
 .open-tag:after
   content: ''
@@ -59,3 +60,37 @@
   color: red
   right: 0
   top: calc(50% - 1rem)
+
+@media (max-width: 480px)
+  .pro-page-ctn
+    width: 100%
+    $p-margin-r: 1rem
+    $p-before-size: 1rem
+    p
+      color: white
+    .pro-ctn
+      display: block
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+      padding: 1rem 2rem
+      .pro-title
+        p
+          line-height: 2.5rem
+          font-size: 1.4rem
+          letter-spacing: .1rem
+          position: relative
+        p:before
+          content: ""
+          display: inline-block
+          width: $p-before-size
+          height: $p-before-size
+          background-color: #f1606b
+          border-radius: 50%
+          margin-right: $p-margin-r
+      .pro-answer
+        display: none
+        margin-right: 2.5rem
+        p
+          text-indent: $p-margin-r + $p-before-size
+          line-height: 2rem
+          font-size: 1rem
+          letter-spacing: .3rem
