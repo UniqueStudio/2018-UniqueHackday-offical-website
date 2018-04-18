@@ -5,3 +5,9 @@
 *dist
 
 dist.zip
+
+
+
+
+*.log
+log/*
