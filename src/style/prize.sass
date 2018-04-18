@@ -1,73 +1,155 @@
-#prize-ctn
-  box-sizing: border-box
+@media (min-width: 480px)
+  #prize-ctn
+    box-sizing: border-box
 
 
-.prize-title
-  width: 100%
-  margin-top: -10rem
-#prize-ctn
-  p
-    text-align: center
+  .prize-title
+    width: 100%
+    margin-top: -10rem
+  #prize-ctn
+    p
+      text-align: center
 
-  p:nth-child(1)
-    color: #f1606b
-    font-weight: 800
-    letter-spacing: 1.5rem
-    text-indent: 1.5rem
-    font-size: 4rem
-  p:nth-child(2)
-    color: rgba(241, 96, 107, 0.4)
-    font-size: 2rem
-    letter-spacing: 1rem
-    margin-top: .3rem
-    font-weight: 800
+    p:nth-child(1)
+      color: #f1606b
+      font-weight: 800
+      letter-spacing: 1.5rem
+      text-indent: 1.5rem
+      font-size: 4rem
+    p:nth-child(2)
+      color: rgba(241, 96, 107, 0.4)
+      font-size: 2rem
+      letter-spacing: 1rem
+      margin-top: .3rem
+      font-weight: 800
 
-.prize-more
-  width: 100%
-  .prize-info-ctn
-    height: 90%
-    width: 90%
-    display: flex
-    margin: 5rem auto 0 auto
-    .prize-info-item
-      position: relative
-      flex: 1 1 (250rem / 15)
+  .prize-more
+    width: 100%
+    .m-prize-info-ctn
+      display: none;
+    .prize-info-ctn
+      height: 90%
+      width: 90%
       display: flex
-      justify-content: center
-      align-items: flex-end
-      img[alt="champion"]
-        width: 250 / 15 * 0.85rem
-      img[alt="second"], img[alt="third"]
-        width: 250 / 15 * 0.5rem
-      img[alt="cata"], img[alt="company"]
-        width: 250 / 15 * 0.45rem
-      .prize-info-text
-        width: 100%
-        $h: 50%
-        height: $h
-        position: absolute
-        bottom: -$h
-        left: 0
+      margin: 5rem auto 0 auto
+      .prize-info-item
+        position: relative
+        flex: 1 1 (250rem / 15)
         display: flex
-        flex-direction: column
-        justify-content: flex-end
-        align-items: center
-        .prize-name, .prize-detail
-          color: #1d2d61
-        .prize-name
-          font-size: (25rem) / 15
-          letter-spacing: .5rem
-          text-indent: .5rem
-          font-weight: 600
-        .prize-detail
-          font-size: (15rem) / 15
-          letter-spacing: .3rem
-          text-indent: .3rem
-        .prize-award
-          color: #323232
-          margin-top: .6rem
-          letter-spacing: .2rem
-          text-indent: .2rem
-          font-size: (24rem) / 15
-          font-weight: 600
+        justify-content: center
+        align-items: flex-end
+        img[alt="champion"]
+          width: 250 / 15 * 0.85rem
+        img[alt="second"], img[alt="third"]
+          width: 250 / 15 * 0.5rem
+        img[alt="cata"], img[alt="company"]
+          width: 250 / 15 * 0.45rem
+        .prize-info-text
+          width: 100%
+          $h: 50%
+          height: $h
+          position: absolute
+          bottom: -$h
+          left: 0
+          display: flex
+          flex-direction: column
+          justify-content: flex-end
+          align-items: center
+          .prize-name, .prize-detail
+            color: #1d2d61
+          .prize-name
+            font-size: (25rem) / 15
+            letter-spacing: .5rem
+            text-indent: .5rem
+            font-weight: 600
+          .prize-detail
+            font-size: (15rem) / 15
+            letter-spacing: .3rem
+            text-indent: .3rem
+          .prize-award
+            color: #323232
+            margin-top: .6rem
+            letter-spacing: .2rem
+            text-indent: .2rem
+            font-size: (24rem) / 15
+            font-weight: 600
 
+@media (max-width: 480px)
+  #prize-ctn
+    box-sizing: border-box
+    div
+      vertical-align: baseline
+
+  .prize-title
+    width: 100%
+    margin: 3rem 0
+
+  #prize-ctn
+    p
+      text-align: center
+
+    p:nth-child(1)
+      color: #f1606b
+      font-weight: 800
+      letter-spacing: 1.5rem
+      text-indent: 1.5rem
+      font-size: 3rem
+    p:nth-child(2)
+      color: rgba(241, 96, 107, 0.4)
+      font-size: 2rem
+      letter-spacing: 1rem
+      margin-top: .3rem
+      font-weight: 800
+
+  .prize-more
+    width: 100%
+    .prize-info-ctn
+      display: none
+    .m-prize-info-ctn
+      display: block
+      .prize-info-item:nth-child(1)
+        width: 100%
+        height: 
+      .prize-info-item
+        display: inline-block
+        position: relative
+        width: 49%
+        text-align: center
+        justify-content: center
+        img[alt="champion"]
+          width: 9rem
+        img[alt="second"]
+          width: 7rem
+        img[alt="third"]
+          margin-top: 4rem
+          width: 6rem
+        img[alt="cata"], img[alt="company"]
+          margin-top: 6rem
+          width: 7rem
+        .prize-info-text
+          width: 100%
+          $h: 50%
+          height: $h
+          position: absolute
+          bottom: -$h
+          left: 0
+          align-items: center
+          .prize-name, .prize-detail
+            color: #1d2d61
+          .prize-name
+            display: block
+            font-size: 1rem
+            letter-spacing: .5rem
+            text-indent: .5rem
+            font-weight: 600
+          .prize-detail
+            font-size: 1rem
+            letter-spacing: .3rem
+            text-indent: .3rem
+          .prize-award
+            color: #323232
+            margin-top: .6rem
+            letter-spacing: .1rem
+            text-indent: .2rem
+            font-size: 1rem
+            font-weight: 600
