@@ -7,7 +7,6 @@ import "./style/map.sass";
 import "./style/prize.sass";
 import "./utils/jquery.fullpage.min.css";
 import "./utils/jquery.fullpage.min.js";
-import "./style/phone.sass";
 
 const $ = require("jquery");
 
@@ -16,9 +15,14 @@ const $ = require("jquery");
 // });
 
 window.addEventListener("load", () => {
+  if (window.innerWidth < 480) {
+    const day2 = document.querySelector(".section:nth-child(3)");
+    day2.parentElement.removeChild(day2);
+  }
   document.getElementById("fullpage").innerHTML += document.getElementById(
     "template"
   ).innerHTML;
+
   $("#fullpage").fullpage();
 
   $(".pro-title").on("click", function(e) {

@@ -1,10 +1,15 @@
 @media (min-width: 480px)
-  #time-page 
-   display: flex;
+  #time-page
+    display: flex;
   
   #time-page-n 
     display: flex;
   
+  #m-
+    &time-l-b-n,
+    &time-r-b-n
+      display: none
+
   
   #time-l-b 
     display: inline-block;
@@ -124,4 +129,16 @@
     text-align: right;
     vertical-align: top;
     margin-top: 1rem;
-  
+
+
+@media (max-width: 480px)
+  #time-l-b,
+  #time-r-b
+    display: none
+
+  #time-page
+    background-image: url('../static/fake.png')
+    background-size: 100% auto
+    background-position-y: center
+    background-repeat: no-repeat
+    transform: translateY(5%)
