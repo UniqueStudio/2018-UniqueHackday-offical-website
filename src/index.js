@@ -5,16 +5,12 @@ import "./style/thanks.sass";
 import "./style/problem.sass";
 import "./style/map.sass";
 import "./style/prize.sass";
-import "./utils/jquery.fullpage.min.css";
-import "./utils/jquery.fullpage.min.js";
-
-const $ = require("jquery");
 
 // $(document).ready(() => {
 
 // });
 
-window.addEventListener("load", () => {
+window.setTimeout(() => {
   if (window.innerWidth < 480) {
     const day2 = document.querySelector(".section:nth-child(3)");
     day2.parentElement.removeChild(day2);
@@ -44,7 +40,7 @@ window.addEventListener("load", () => {
   $("#btn").on("click", function() {
     window.open("https://console.hack.hustunique.com/", "_self");
   });
-});
+}, 500);
 
 // 彩蛋～
 console.log(
