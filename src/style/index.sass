@@ -60,7 +60,7 @@ a
     width: 100%;
   
   #bg 
-    background-image: url("../static/bg.jpg");
+    background-image: url("../static/background.jpg");
     background-repeat: no-repeat;
     height: 100%;
     z-index: -1;
@@ -187,12 +187,19 @@ a
 
 $title-headline-w: 88vw;
 
+@media (max-width: 360px)
+  html
+    font-size: 7px
+  .r-b-more
+    margin: 1rem 1rem
 @media (max-width: 480px)
+  html
+    font-size: 8px
   .main-page 
     height: 100%;
     width: 100%;
   #bg 
-    background-image: url("../static/bg.png");
+    background-image: url("../static/background.jpg");
     background-repeat: no-repeat;
     height: 100%;
     z-index: -1;
