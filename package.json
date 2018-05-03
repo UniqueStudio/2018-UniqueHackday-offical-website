@@ -3,10 +3,6 @@
   "version": "0.0.1",
   "description": "Main site for Unique Hackday",
   "main": "src/index.js",
-  "dependencies": {
-    "fullpage.js": "^2.9.7",
-    "jquery": "^3.3.1"
-  },
   "devDependencies": {
     "autoprefixer": "^8.1.0",
     "babel-core": "^6.26.0",
