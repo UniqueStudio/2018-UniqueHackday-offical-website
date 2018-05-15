@@ -24,15 +24,14 @@
     "parcel-bundler": "^1.7.1",
     "postcss-modules": "^1.1.0",
     "prettier": "^1.12.1",
-    "uglify-es": "git://github.com/mishoo/UglifyJS2#harmony"
+    "uglify-es": "git://github.com/mishoo/UglifyJS2#harmony",
+    "node-sass": "^4.9.0"
   },
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url=./"
   },
-  "author": "PetnaKanojo <wwhmomo@gmail.com>, Faraway <farawayfed@gmail.com>, LLGZONE <985395976@qq.com>",
-  "license": "MIT",
-  "dependencies": {
-    "node-sass": "^4.9.0"
-  }
+  "author":
+    "PetnaKanojo <wwhmomo@gmail.com>, Faraway <farawayfed@gmail.com>, LLGZONE <985395976@qq.com>",
+  "license": "MIT"
 }
